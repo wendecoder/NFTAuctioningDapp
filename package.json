@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "scripts": {
-    "postinstall": "yarn prisma:generate",
+    "postinstall": "yarn prisma generate",
     "dev": "next dev",
     "start": "next dev",
     "build": "next build",
