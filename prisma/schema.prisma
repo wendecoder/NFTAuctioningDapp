@@ -1,0 +1,23 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+// Define your data model here
+model User {
+  id             Int      @id @default(autoincrement())
+  nftTokenId     Int      @unique
+  highestBidder  String?
+  highestBid     Int?
+  startTime      DateTime?
+  endTime        DateTime?
+  startingPrice  Int?
+  status         String?  // 'past', 'ongoing', 'upcoming'
+  nftImage       Bytes?   // Bytes type to store binary image data
+}
