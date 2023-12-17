@@ -1,0 +1,14 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js",
+  "/buy": "pages/buy.js",
+  "/listnft": "pages/listnft.js",
+  "/past": "pages/past.js",
+  "/api/past": "pages/api/past.js",
+  "/upcoming": "pages/upcoming.js",
+  "/api/upcoming": "pages/api/upcoming.js",
+  "/ongoing": "pages/ongoing.js",
+  "/api/ongoing": "pages/api/ongoing.js"
+}
