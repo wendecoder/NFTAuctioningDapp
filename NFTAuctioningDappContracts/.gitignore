@@ -1,0 +1,4 @@
+.env
+/artifacts
+/typechain-types
+/cache
