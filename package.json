@@ -3,13 +3,14 @@
   "private": true,
   "version": "0.1.0",
   "scripts": {
-    "postinstall": "prisma generate",
     "dev": "next dev",
     "start": "next dev",
     "build": "next build",
     "serve": "next start",
     "format": "prettier --write . '!(node_modules|.next|contracts)/**/*'",
     "check-types": "tsc --noEmit --incremental",
+    "vercel-build": "prisma generate && prisma migrate deploy && next build",
+    "prisma:generate": "prisma generate",
     "vercel": "vercel",
     "vercel:yolo": "vercel --build-env NEXT_PUBLIC_IGNORE_BUILD_ERROR=true"
   },
